@@ -1,3 +1,117 @@
-body{
-    background-image: "2.jpg";
+body, h1, .navbar-brand{
+font-family: 'Courier New', monospace;
+    color:white;
+    justify-content:center;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #4874a3, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.lead{
+    font-size: smaller;
+}
+
+#showCase{
+    padding: 50px;
+    color: black;
+}
+
+  .card-body {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; /* Text color for contrast */
+    padding: 10px;
+    width: 90%; /* Adjust width as needed */
+  }
+
+/* Keyframe for Zoom and Fade In */
+@keyframes zoomFadeIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Keyframe for Zoom and Fade Out */
+@keyframes zoomFadeOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Modal animation styles */
+.modal.fade .modal-dialog {
+  transform: scale(0.8);
+  opacity: 0; /* Initial state */
+  transition: none; /* Disable Bootstrap's default fade behavior */
+}
+
+.modal.fade.show .modal-dialog {
+  animation: zoomFadeIn 0.4s ease-out forwards; /* Fade and zoom in */
+}
+
+.modal.fade .modal-dialog.closing {
+  animation: zoomFadeOut 0.4s ease-in forwards; /* Fade and zoom out */
+}
+
+  .contact-form {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    background-image: url('calling.gif');
+    display: flex;
+    align-items: center;
+    min-height: 15rem;
+    max-width: 35rem;
+    margin: 5rem;
+    
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #4874a3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .contact-form button:hover {
+    background: #474848;
+  }
+
+.mario{
+  position: absolute;
+  animation-name: drive;
+  animation-duration: 10s;
+}
+
+@keyframes drive{
+from{ transform: translateX(0);}
+to{ transform: translateX(1500px);}
 }
