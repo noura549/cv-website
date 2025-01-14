@@ -69,12 +69,13 @@ font-family: 'Courier New', monospace;
   animation: zoomFadeOut 0.4s ease-in forwards; /* Fade and zoom out */
 }
 
-  .contact-form {
+.contact-form {
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    color: white; /* Text color for contrast */
     padding: 20px;
     text-align: left;
-    background-image: url('calling.gif');
     display: flex;
     align-items: center;
     min-height: 15rem;
@@ -102,7 +103,7 @@ font-family: 'Courier New', monospace;
     cursor: pointer;
   }
   .contact-form button:hover {
-    background: #474848;
+    background: #ce847a;
   }
 
 .mario{
