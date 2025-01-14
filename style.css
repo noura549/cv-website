@@ -54,6 +54,9 @@ font-family: 'Courier New', monospace;
   }
 }
 
+.carousel-indicators {
+  display: none;
+}
 /* Modal animation styles */
 .modal.fade .modal-dialog {
   transform: scale(0.8);
