@@ -108,7 +108,11 @@ font-family: 'Courier New', monospace;
   .contact-form button:hover {
     background: #ce847a;
   }
-
+.card{
+  background-color: transparent;
+  border: none; /* Removes the border */
+  box-shadow: none; /* Optional: Removes shadow if applied */
+}
 .mario{
   position: absolute;
   animation-name: drive;
